@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>节日贺卡</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-container{
+			height: 100%;
+		}
+		.swiper-slide{
+			background: url("images/bg.jpg");
+			/* background-size: cover; */
+			/* width: 100%; */
+			height: 100%;
+			position: relative;
+		}
+		.swiper-slide .flower{
+			width: 60%;
+			position: absolute;
+			top: 40px;
+			left: 0px;
+		}
+		.swiper-slide .s1{
+			margin-top: 200px;
+			max-width: 100%;
+		}
+		.swiper-slide .t1{
+			width: 20%;
+			position: absolute;
+			top: 250px;
+			right: 30px;
+
+		}
+		.swiper-slide .t2{
+			width: 30%;
+			position: absolute;
+			top: 260px;
+			left: 40px;
+		}
+		.swiper-slide .i1{
+			position: absolute;
+			width: 15%;
+			top: 12%;
+			right: 40px;
+		}
+		.swiper-slide .i2{
+			position: absolute;
+			width: 15%;
+			top: 15%;
+			right: 40px;
+		}
+		.swiper-slide .i3{
+			width: 65%;
+			position: absolute;
+			top: 13%;
+			left: 10px;
+		}
+		.swiper-slide .i4{
+			width: 65%;
+			position: absolute;
+			top: 15%;
+			left: 10px;
+		}
+		.swiper-slide .i5{
+			width: 85%;
+			position: absolute;
+			bottom: 8%;
+			left: 25px;
+			border-radius: 10px;
+		}
+		.swiper-slide .s3-i2{
+			position: absolute;
+			width: 15%;
+			top: 15%;
+			right: 40px;
+		}
+		.swiper-slide .s3-i4{
+			width: 65%;
+			position: absolute;
+			top: 15%;
+			left: 10px;
+		}
+		.swiper-slide .s3-i5{
+			width: 85%;
+			position: absolute;
+			bottom: 8%;
+			left: 25px;
+			border-radius: 10px;
+		}
+		.jiantou{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			z-index: 999;
+			animation:myfirst 1s infinite;
+			/*border: 1px solid blue;*/
+		}
+		
+		@keyframes myfirst{
+			0%{opacity: 1;}
+			50%{opacity: 0.2;}
+			100%{opacity:1;}
+		}
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="animate"><img class="jiantou" src="images/web-swipe-tip.png"></div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img class="s1 ani" src="images/s1.png" alt="" swiper-animate-effect="fadeIn" swiper-ainmate-duration="0.3s" swiper-animate-delay="0.8s">
+				<img class="flower ani" src="images/flower.png" alt=""  swiper-animate-effect="bounceInLeft" swiper-ainmate-duration="0.5s" swiper-animate-delay="0.1s">
+				<img class="t1 ani" src="images/s1-t1.png" alt="" swiper-animate-effect="zoomIn" swiper-ainmate-duration="1s" swiper-animate-delay="1.2s">
+				<img class="t2 ani" src="images/s1-t2.png" alt="" swiper-animate-effect="fadeIn" swiper-ainmate-duration="2s" swiper-animate-delay="1.6s">
+				
+			</div>
+			<div class="swiper-slide">
+				<img class="i1 ani" src="images/s2-i1.png" swiper-animate-effect="fadeInDown" swiper-ainmate-duration="1s" swiper-animate-delay="0.1s" >
+				<img class="i2 ani" src="images/s2-i2.png" src="images/s2-i1.png" swiper-animate-effect="fadeInUp" swiper-ainmate-duration="0.2s" swiper-animate-delay="0.3s">
+				<img class="i3 ani" src="images/s2-i3.png" 
+				 swiper-animate-effect="fadeInLeft" swiper-ainmate-duration="1s" swiper-animate-delay="0.4s">
+				 <img class="i4 ani" src="images/s2-i4.png" 
+				 swiper-animate-effect="fadeInRight" swiper-ainmate-duration="1s" swiper-animate-delay="0.8s">
+				  <img class="i5 ani" src="images/s2-i5.png" 
+				 swiper-animate-effect="fadeInLeft" swiper-ainmate-duration="1s" swiper-animate-delay="1.0s">
+			</div>
+			<div class="swiper-slide">
+				<img class="i1 ani" src="images/s2-i1.png" swiper-animate-effect="fadeInDown" swiper-ainmate-duration="1s" swiper-animate-delay="0.1s" >
+				<img class="s3-i2 ani" src="images/s3-i2.png" src="images/s2-i1.png" swiper-animate-effect="fadeInUp" swiper-ainmate-duration="0.2s" swiper-animate-delay="0.3s">
+				<img class="i3 ani" src="images/s2-i3.png" 
+				 swiper-animate-effect="fadeInLeft" swiper-ainmate-duration="1s" swiper-animate-delay="0.4s">
+				 <img class="s3-i4 ani" src="images/s3-i4.png" 
+				 swiper-animate-effect="fadeInRight" swiper-ainmate-duration="1s" swiper-animate-delay="0.8s">
+				  <img class="s3-i5 ani" src="images/s3-i5.png" 
+				 swiper-animate-effect="fadeInLeft" swiper-ainmate-duration="1s" swiper-animate-delay="1.0s">
+			</div>
+			<div class="swiper-slide">
+				<img class="s1 ani" src="images/s1.png" alt="" swiper-animate-effect="fadeIn" swiper-ainmate-duration="0.3s" swiper-animate-delay="0.8s">
+				<img class="flower ani" src="images/flower.png" alt=""  swiper-animate-effect="bounceInLeft" swiper-ainmate-duration="0.5s" swiper-animate-delay="0.1s">
+				<img class="t1 ani" src="images/s1-t1.png" alt="" swiper-animate-effect="zoomIn" swiper-ainmate-duration="1s" swiper-animate-delay="1.2s">
+				<img class="t2 ani" src="images/s1-t2.png" alt="" swiper-animate-effect="fadeIn" swiper-ainmate-duration="2s" swiper-animate-delay="1.6s">
+				
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<script>
+	var myswiper=new Swiper(".swiper-container",{
+		direction:"vertical",
+		pagination:".swiper-pagination",
+		paginationClickable:true,
+		onInit:function(swiper){
+			swiperAnimateCache(swiper);
+			swiperAnimate(swiper);
+		},
+		onSlideChangeEnd:function(swiper){
+			swiperAnimate(swiper);
+		}
+	});
+
+	$(".jiantou").bind("click",function(){
+		myswiper.slideTo();
+	});
+	</script>
+</body>
+</html>
